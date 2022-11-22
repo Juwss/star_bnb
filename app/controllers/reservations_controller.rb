@@ -8,13 +8,13 @@ class ReservationsController < ApplicationController
   end
 
   def new
-   @star = Star.find(params[:id])
-    @reservation = Reservation.new
+    @star = Star.find(params[:star_id])
+    @reservation = Reservation.new(star: @star)
   end
 
   def create
     @reservation = Reservation.new(reservation_params)
-    @star = Star.find(params[:star_id])
+    @reservation.star = @star
     if @reservation.save
       redirect_to reservation_path(@star)
     else
