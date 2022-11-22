@@ -1,0 +1,5 @@
+<%= simple_form_for [@user, @star] do |f| %>
+    <%= f.input :start_date, as:date, html5:true %>
+    <%= f.input :expire_at, as:date, html5:true %>
+    <%= f.submit "Réserver", class: "btn btn-primary"%>
+  <% end %>
