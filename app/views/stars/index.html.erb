@@ -2,15 +2,25 @@
   StarBnB
 </div>
 
-<h2>Stars :</h2>
+<div class="header">
+  Pick your star and begin to leave the dream
+</div>
 
-<% @stars.each do |star| %>
-  <div class="card-product">
-    <%= cl_image_tag star.photo.key, alt: "Beyoncé Knowles", crop: :fill %>
-    <div class="card-product-infos">
-      <h2><%= link_to star.last_name, star_path(star) %></h2>
-      <p><%= star.category %></p>
-      <p><%= star.price %>€</p>
-    </div>
-      <% end %>
+<div class="container">
+  <div class="cards">
+    <% @stars.each do |star| %>
+      <div class="card">
+        <%= cl_image_tag star.photo.key, alt: "Beyoncé Knowles", crop: :fill %>
+        <div>
+          <% full_name = "#{star.first_name} #{star.last_name}" %>
+          <div class="link"><%= link_to full_name, star_path(star) %></div>
+          <div class="details">
+            <%= star.category %>
+            <br>
+            Price : <%= star.price %>€
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
+</div>

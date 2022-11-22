@@ -1,5 +1,6 @@
 // Import page-specific CSS files here.
 @import "home";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:wght@200;500;800&display=swap');
 
 .card-category {
   background-size: cover;
@@ -8,43 +9,95 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
+  color: whitesmoke;
+  font-family: Bebas neue;
+  font-size: 48px;
+  letter-spacing: 2vmin;
+  font-weight: 800;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-.card-product {
-  overflow: hidden;
-  height: 120px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
+.header {
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 32px;
+  letter-spacing: 1vmin;
+  color: rgba(67, 48, 75, 0.934);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.card {
+  background-color: rgb(232, 199, 159);
   align-items: center;
 }
 
-.card-product img {
-  height: 100%;
-  width: 120px;
-  object-fit: cover;
+img {
+  width: 100%;
 }
 
-.card-product h2 {
+.link{
+  font-family: 'Bitter', serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(67, 48, 75, 0.84);
+}
+
+a:hover {
+  color: rgba(67, 48, 75, 0.579);
+}
+
+.details {
+  font-family: 'Bitter', serif;
   font-size: 16px;
-  font-weight: bold;
-  margin: 0;
+  font-weight: 500;
+  color: rgba(30, 25, 32, 0.828);
 }
 
-.card-product p {
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
-}
+// .stars__container {
+//   display: flex;
+// }
 
-.card-product .card-product-infos {
-  padding: 16px;
-}
+// .cards {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr 1fr;
+//   grid-gap: 16px;
+//   flex-grow: 1;
+// }
+
+// .card {
+//   background-size: cover;
+//   background-position: center;
+//   height: 150px;
+//   border-radius: 1px;
+//   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
+//   font-size: 22px;
+//   color: white;
+//   font-weight: bolder;
+//   text-shadow: 0 0 10px rgba(0,0,0,0.7);
+// }
+
+// @media(max-width: 960px) {
+//   .cards {
+//     grid-template-columns: 1fr 1fr;
+//   }
+// }
+
+// @media(max-width: 560px) {
+//   .cards {
+//     grid-template-columns: 1fr;
+//   }
+// }
