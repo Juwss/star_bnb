@@ -1,1 +1,7 @@
-<h1 class="text-align">list des stars</h1>
+<h2>Stars :</h2>
+
+<ul>
+  <% @stars.each do |star| %>
+    <li><%= link_to star.category, star_path(star) %></li>
+  <% end %>
+</ul>
