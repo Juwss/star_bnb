@@ -17,7 +17,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_21_162736) do
   create_table "stars", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
-    t.string "type"
+    t.string "category"
     t.integer "price"
     t.string "description"
     t.bigint "user_id", null: false
