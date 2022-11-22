@@ -1,12 +1,5 @@
 <h1 class="text-align">Détails star</h1>
 
-<% if policy(@star).edit? %>
-  <%= link_to "Edit details" , edit_details_path(@details) %>
-<% end %>
-
-<%= button_to "Destroy" , @stars, method: :delete
-if policy(@stars).destroy? %>
-
 <div class="container">
   <div class="row movie-display">
     <div class="col-lg-6">
