@@ -1,10 +1,10 @@
 class ReservationsController < ApplicationController
   def index
-    @reservations = Reservation.all(params[:user_id])
+    @reservations = Reservation.all
   end
 
   def show
-    @reservation = Reservation.find(params[:id])
+    @reservation = Reservation.find(params[:star_id])
   end
 
   def new
@@ -14,9 +14,11 @@ class ReservationsController < ApplicationController
 
   def create
     @reservation = Reservation.new(reservation_params)
+    @reservation.user = current_user
+    @star = Star.find(params[:star_id])
     @reservation.star = @star
     if @reservation.save
-      redirect_to reservation_path(@star)
+      redirect_to star_reservation_path(@reservation, @star)
     else
       render :new, status: :unprocessable_entity
     end
