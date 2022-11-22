@@ -1,0 +1,6 @@
+<%= simple_form_for [@star, @reservation] do |f| %>
+<%# ajouter la relation avec le user après si besoin %>
+    <%= f.input :start_date, as:date, html5:true %>
+    <%= f.input :expire_at, as:date, html5:true %>
+    <%= f.submit "Réserver", class: "btn btn-primary"%>
+  <% end %>
