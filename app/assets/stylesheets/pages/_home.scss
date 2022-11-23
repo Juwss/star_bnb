@@ -11,7 +11,8 @@
   background-position: center;
   padding: 150px 0;
   text-align: center;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1vmin;
 }
 
 .banner h1 {
@@ -20,7 +21,8 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 48px;
   font-weight: bold;
-  font-family: Helvetica, sans-serif;
+  font-family:'Bebas Neue', cursive;
+  letter-spacing: 1vmin;
 }
 
 .banner p {
@@ -28,7 +30,8 @@
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-family: Helvetica, sans-serif;
+  font-family:'Bebas Neue', cursive;
+  letter-spacing: 1vmin;
 }
 
 .btn-gradient {
@@ -46,3 +49,19 @@
   background: rgb(232, 199, 159);
   color: white;
 }
+
+.nav-link-login {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  background: linear-gradient(#5f1e45, #601542);
+  transition: background 0.3s ease;
+  border: 1px solid #601542;
+}
+
+.nav-link-login:hover {
+    background: rgb(232, 199, 159);
+    color: white;
+  }
