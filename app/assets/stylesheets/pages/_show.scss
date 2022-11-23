@@ -1,0 +1,46 @@
+@import "home";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:wght@200;500;800&display=swap');
+
+.header {
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 32px;
+  letter-spacing: 1vmin;
+  color: rgba(67, 48, 75, 0.934);
+  padding: 20px;
+}
+
+.cards_star {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 18px;
+}
+
+.card_star {
+  font-family: 'Bitter', serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px;
+  background-color: rgba(112, 99, 122, 0.501);
+  display: flex;
+  align-items: center;
+}
+
+#img {
+  height: 100%;
+  max-width: fit-content;
+}
+
+// #btn_resa {
+//   border: solid 1px;
+//   padding: 10px;
+//   background-color: aquamarine;
+//   position: static;
+//   bottom: 10%;
+// }
+
+a {
+  text-decoration: none;
+  color: rgba(67, 48, 75, 0.84);
+  font-size: bold;
+}

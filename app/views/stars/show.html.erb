@@ -1,9 +1,22 @@
-
-<h2><%= @star.first_name %></h2>
-<p><%= @star.last_name %></p>
-<p><%= @star.category %></p>
-<p><%= @star.description %></p>
+<div class="header"><%= @star.first_name %> <%= @star.last_name %></div>
 
 
 
-<%= link_to "Réserver ici", new_star_reservation_path(@star) %>
+<div class="container">
+  <div class="cards_star">
+    <div id="img">
+      <div class="card_star">
+        <%= cl_image_tag @star.photo.key, alt: "photo", crop: :fill %>
+      </div>
+    </div>
+    <div class="card_star">
+      <%= @star.description %>
+    </div>
+  </div>
+  <div id="btn_resa">
+    <%= link_to "Réserver ici", new_star_reservation_path(@star) %>
+  </div>
+  <div>
+    <%= link_to "Retour à la liste", stars_path %>
+  </div>
+</div>
