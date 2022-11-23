@@ -13,10 +13,12 @@
       <%= @star.description %>
     </div>
   </div>
-  <div id="btn_resa">
-    <%= link_to "Réserver ici", new_star_reservation_path(@star) %>
-  </div>
   <div>
-    <%= link_to "Retour à la liste", stars_path %>
+    <%= link_to "Réserver ici", new_star_reservation_path(@star), class: "btn-gradient" %>
+  </div>
+  <br>
+  <br>
+  <div>
+    <%= link_to "Retour à la liste", stars_path, class: "btn-gradient" %>
   </div>
 </div>
