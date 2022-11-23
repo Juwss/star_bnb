@@ -1,25 +1,9 @@
-<h1 class="text-align">Détails star</h1>
 
-<div class="container">
-  <div class="row movie-display">
-    <div class="col-lg-6">
-  </div>
-  <div class="col-lg-6 stars-display-content">
-    <p class="movie-header-content">
-    <p class="btn-stars-edit"><%= @stars.rating %></span></p>
-  </div>
+<h2><%= @star.first_name %></h2>
+<p><%= @star.last_name %></p>
+<p><%= @star.category %></p>
+<p><%= @star.description %></p>
 
-  <p>
-    <%= @stars.overview %>
-  </p>
 
-  <div>
-    <iframe
-      width="500"
-      height="350"
-      frameborder="0"
-      allow="accelerometer, autoplay, clipboard-write, encrypted-stars"
-      allowfullscreen>
-    </iframe>
-  </div>
-</div>
+
+<%= link_to "Réserver ici", new_star_reservation_path(@star) %>
