@@ -1,1 +1,21 @@
 <h1>Toutes mes réservations</h1>
+
+
+<ul>
+  <% @reservations.each do |reservation| %>
+  <% id = reservation.star_id %>
+  <% star = Star.find(id) %>
+    <% full_name = "#{star.first_name} #{star.last_name}" %>
+    <li><%= full_name %></li>
+    Reservation start on : <%= reservation.date_start %>
+    <br>
+    until : <%= reservation.date_end %>
+    <br>
+  <% end %>
+</ul>
+<br>
+<br>
+<%= console %>
+
+
+<%# <% full_name = "#{star.first_name} #{star.last_name}" %>
