@@ -34,8 +34,11 @@
 }
 
 .card {
-  background-color: rgb(232, 199, 159);
+  background-color: rgba(149, 143, 149, 0.153);
   align-items: center;
+  padding: 6px;
+  box-shadow: 1px 2px 2px rgb(215, 215, 215);
+  border: none;
 }
 
 img {
