@@ -1,6 +1,14 @@
-<div class="banner">
-  <h2 class="text-light">Star BNB </h2>
-  <h3 class="text-center p-3 text-light">Vie ta passion, <br> réserve ton idole! <%= link_to "HERE", stars_path %> </h3>
-</div>
+<%# <div class="banner"> %>
+  <%# <h2 class="text-light">Star BNB </h2> %>
+  <%# <h3 class="text-center p-3 text-light">Vie ta passion, <br> réserve ton idole! <%= link_to "HERE", stars_path </h3> %>
+<%# </div> %>
 
-<p>Find me in app/views/pages/home.html.erb</p>
+<%# <p>Find me in app/views/pages/home.html.erb</p> %>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/1210276/pexels-photo-1210276.jpeg?auto=compress&cs=tinysrgb&w=400);">
+  <div class="container">
+    <h1><strong>STAR BNB</strong></h1>
+    <p>Vie ta passion, <strong>réserve ton idole!</strong></p>
+    <a href="#"><%= link_to "ENTER", stars_path, class: "btn btn-gradient" %></a>
+  </div>
+</div>
