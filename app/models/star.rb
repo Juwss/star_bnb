@@ -8,7 +8,7 @@ class Star < ApplicationRecord
 
   include PgSearch::Model
   pg_search_scope :search_by_name_and_description,
-    against: [ :first_name, :last_name, :description ],
+    against: [ :first_name, :last_name ],
     using: {
       tsearch: { prefix: true }
   }
