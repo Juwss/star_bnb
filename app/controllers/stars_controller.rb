@@ -26,6 +26,21 @@ class StarsController < ApplicationController
     end
   end
 
+  def edit
+    @star = Star.find(params[:id])
+  end
+
+  def update
+    @star = Star.find(params[:id])
+    @star.update(star_params)
+    if @star.save
+      redirect_to star_path(@star)
+    else
+      render :new, status: :unprocessable_entity
+    end
+  end
+
+
   private
 
   def star_params
