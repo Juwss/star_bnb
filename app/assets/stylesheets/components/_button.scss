@@ -1,17 +1,17 @@
 .btn
 {
-  background-color: linear-gradient(#5f1e45, #601542);
+  background-color: rgb(129, 60, 118);
   color: white;
 }
 
 .btn:hover{
-  background: rgb(232, 199, 159);
+  background: rgb(253, 255, 207);
   color: white;
 }
 
 .btn-gradient:hover {
-  background: rgb(232, 199, 159);
-  color: white;
+  background: rgb(253, 255, 207);
+  color: rgb(65, 30, 59);
 }
 
 
@@ -23,10 +23,16 @@
   border-radius: 4px;
   font-weight: bold;
   font-family: Helvetica, sans-serif;
-  background: linear-gradient(#5f1e45, #601542);
+  background: rgb(129, 60, 118);
   transition: background 0.3s ease;
-  border: 1px solid #601542;
 }
+
+.add-a-star {
+  position: absolute;
+  right: 10px;
+  top: 127px;
+}
+
 
 // button
 // {
