@@ -1,18 +1,16 @@
-<h1 class="text-align">Ajouter une star</h1>
 
-<%= form_for(resources, as: resource_name, url: session_path(resource_name)) do |f| %>
 
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </div>
+<div class="container1">
+<h1>Ajouter une star</h1>
 
-  <div class="field">
-    <%= f.label :content %><br>
-    <%= f.text_area :content %>
-  </div>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
+<%= simple_form_for ([@star]) do |f| %>
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+    <%= f.input :price %>
+    <%= f.input :description %>
+    <%= f.input :photo, as: :file %>
+    <%= f.submit "Enregistrer", class: "btn"%>
+  <% end %>
+
+</div>
