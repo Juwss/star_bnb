@@ -1,0 +1,13 @@
+<div class="container1">
+  <h1>Mettre à jour le profil d'une star</h1>
+
+  <%= simple_form_for (@star) do |f| %>
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+    <%= f.input :price %>
+    <%= f.input :description %>
+    <%= f.input :photo, as: :file %>
+    <%= f.submit "Enregistrer", class: "btn btn-gradient"%>
+  <% end %>
+  <br>
+</div>
