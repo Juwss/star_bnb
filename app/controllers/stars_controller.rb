@@ -18,6 +18,7 @@ class StarsController < ApplicationController
 
   def create
     @star = Star.new(star_params)
+    @star.user = current_user
     if @star.save
       redirect_to star_path(@star)
     else
@@ -28,7 +29,7 @@ class StarsController < ApplicationController
   private
 
   def star_params
-    params.require(:star).permit(:last_name, :first_name, :description, :type, :price, :photo)
+    params.require(:star).permit(:last_name, :first_name, :description, :price, :photo)
   end
 
 end
