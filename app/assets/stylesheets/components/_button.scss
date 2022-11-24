@@ -1,12 +1,31 @@
 .btn
 {
-  background-color: rgba(67, 48, 75, 0.84);
+  background-color: linear-gradient(#5f1e45, #601542);
   color: white;
 }
 
 .btn:hover{
-  background: rgba(67, 48, 75, 0.64);
+  background: rgb(232, 199, 159);
   color: white;
+}
+
+.btn-gradient:hover {
+  background: rgb(232, 199, 159);
+  color: white;
+}
+
+
+.btn-gradient {
+  text-decoration: none;
+  letter-spacing: 0vmin;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  background: linear-gradient(#5f1e45, #601542);
+  transition: background 0.3s ease;
+  border: 1px solid #601542;
 }
 
 // button

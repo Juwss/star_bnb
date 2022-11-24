@@ -1,7 +1,11 @@
 class StarsController < ApplicationController
 
   def index
-    @stars = Star.all
+    if params[:query].present?
+      @stars = Star.search_by_name_and_description(params[:query])
+    else
+      @stars = Star.all
+    end
   end
 
   def show
