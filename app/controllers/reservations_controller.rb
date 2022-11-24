@@ -17,6 +17,7 @@ class ReservationsController < ApplicationController
     @reservation.user = current_user
     @star = Star.find(params[:star_id])
     @reservation.star = @star
+    @reservation.save
     if @reservation.save
       redirect_to reservation_path(@reservation)
     else

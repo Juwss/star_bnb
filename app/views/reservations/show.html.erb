@@ -1,4 +1,18 @@
+
+<div class="container1">
 <h1>Détails de la réservation</h1>
 
-<p>Price</p>
-<p>Date</p>
+<p>Price :
+<%= @reservation.star.price %></p>
+
+
+<p>Date :
+du <%= @reservation.date_start %>
+au <%= @reservation.date_end %></p>
+
+  <%# <div> %>
+    <%# <%= link_to "Retour à la liste", stars_path %>
+  <%# </div> %>
+
+  <%= link_to "Voir mes réservations", reservations_path %>
+</div>

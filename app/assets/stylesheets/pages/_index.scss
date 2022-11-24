@@ -1,6 +1,5 @@
 // Import page-specific CSS files here.
 @import "home";
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:wght@200;500;800&display=swap');
 
 .card-category {
   background-size: cover;
@@ -19,14 +18,6 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-.header {
-  text-align: center;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 32px;
-  letter-spacing: 1vmin;
-  color: rgba(67, 48, 75, 0.934);
-}
-
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -34,8 +25,12 @@
 }
 
 .card {
-  background-color: rgb(232, 199, 159);
+  background-color: rgba(149, 143, 149, 0.153);
   align-items: center;
+  padding: 6px;
+  box-shadow: 1px 2px 2px rgb(215, 215, 215);
+  border: none;
+  border-radius: 2px;
 }
 
 img {
@@ -63,41 +58,3 @@ a:hover {
   font-weight: 500;
   color: rgba(30, 25, 32, 0.828);
 }
-
-// .stars__container {
-//   display: flex;
-// }
-
-// .cards {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr 1fr 1fr;
-//   grid-gap: 16px;
-//   flex-grow: 1;
-// }
-
-// .card {
-//   background-size: cover;
-//   background-position: center;
-//   height: 150px;
-//   border-radius: 1px;
-//   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-around;
-//   font-size: 22px;
-//   color: white;
-//   font-weight: bolder;
-//   text-shadow: 0 0 10px rgba(0,0,0,0.7);
-// }
-
-// @media(max-width: 960px) {
-//   .cards {
-//     grid-template-columns: 1fr 1fr;
-//   }
-// }
-
-// @media(max-width: 560px) {
-//   .cards {
-//     grid-template-columns: 1fr;
-//   }
-// }
