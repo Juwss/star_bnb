@@ -58,4 +58,10 @@ star6 = Star.new(first_name: "Justin", last_name: "Bieber", category: "Music art
 star6.user = user3
 star6.photo.attach(io: file6, filename: "image.jpg", content_type: "image/jpg")
 star6.save
+
+file7 = URI.open("https://lequotidien.lu/wp-content/uploads/2017/01/celine-dion-840x450.jpg")
+star7 = Star.new(first_name: "Céline", last_name: "Dion", category: "Music artist", price: "8000", description: "Elle est repérée par René Angelil dès l'âge de douze ans. Elle connaît un succès immédiat et enregistre ses premiers albums en 1981. Les albums s'enchaînent, notamment : « Incognito », « S'il suffisait d'aimer », disque de diamant en France et disque de platine au Canada, ou encore « Céline Dion ». Elle enchaîne depuis le début de sa carrière les tournées mondiales et ses concerts se jouent tous à guichets fermés. Réservez-la pour profiter d'un moment inédit avec cette immense star")
+star7.user = user3
+star7.photo.attach(io: file7, filename: "image.jpg", content_type: "image/jpg")
+star7.save
 puts "Stars OK"
