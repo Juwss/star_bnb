@@ -1,23 +1,16 @@
 
 
 <div class="container1">
-<h1>Ajouter une star</h1>
+  <h1>Ajouter une star</h1>
 
-
-<<<<<<< HEAD
-<%= simple_form_for ([@star]) do |f| %>
+  <%= simple_form_for ([@star]) do |f| %>
     <%= f.input :first_name %>
     <%= f.input :last_name %>
     <%= f.input :price %>
     <%= f.input :description %>
     <%= f.input :photo, as: :file %>
-    <%= f.submit "Enregistrer", class: "btn"%>
+    <%= f.submit "Enregistrer", class: "btn btn-gradient"%>
   <% end %>
-
+  <br>
+  <%= link_to "Se connecter", new_user_session_path, class: "btn btn-gradient" %>
 </div>
-=======
-  <div class="actions">
-    <%= f.submit "Log in"%>
-  </div>
-<% end %>
->>>>>>> master
