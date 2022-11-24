@@ -6,7 +6,17 @@
   Pick your star and begin to live the dream
 </div>
 
+
 <div class="container">
+  <%= form_with url: stars_path, method: :get, class: "d-flex" do %>
+    <%= text_field_tag :query,
+      params[:query],
+      class: "form-control",
+      placeholder: "Trouver une star"
+    %>
+    <%= submit_tag "Chercher", class: "btn btn-primary" %>
+  <% end %>
+
   <div class="cards">
     <% @stars.each do |star| %>
       <div class="card">
