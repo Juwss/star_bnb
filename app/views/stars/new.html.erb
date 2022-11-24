@@ -7,7 +7,7 @@
     <%= f.input :first_name %>
     <%= f.input :last_name %>
     <%= f.input :price %>
-    <%= f.input :description %>
+    <%= f.input :description, as: :text %>
     <%= f.input :photo, as: :file %>
     <%= f.submit "Enregistrer", class: "btn btn-gradient"%>
   <% end %>
