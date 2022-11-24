@@ -8,7 +8,9 @@
     <% id = reservation.star_id %>
     <% star = Star.find(id) %>
       <% full_name = "#{star.first_name} #{star.last_name}" %>
-      <li><%= full_name %></li>
+      <li><%= full_name %>
+      <%= link_to "(Delete)", reservation_path(reservation), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+      </li>
       Reservation start on : <%= reservation.date_start %>
       <br>
       until : <%= reservation.date_end %>
