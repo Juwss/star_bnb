@@ -1,37 +1,8 @@
 // Import page-specific CSS files here.
 @import "home";
+@import "show";
 
-.card-category {
-  background-size: cover;
-  background-position: center;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: whitesmoke;
-  font-family: Bebas neue;
-  font-size: 48px;
-  letter-spacing: 2vmin;
-  font-weight: 800;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
 
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
-}
-
-.card {
-  background-color: rgba(149, 143, 149, 0.153);
-  align-items: center;
-  padding: 6px;
-  box-shadow: 1px 2px 2px rgb(215, 215, 215);
-  border: none;
-  border-radius: 2px;
-}
 
 img {
   width: 100%;
