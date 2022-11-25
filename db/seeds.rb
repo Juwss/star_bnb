@@ -6,13 +6,8 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 require "open-uri"
-
-<<<<<<< HEAD
-Rerservation.destroy_all
-=======
 puts "Cleaning seeds"
 Reservation.destroy_all
->>>>>>> 8c16b25f651132581cd454e3cca0c3864959053f
 Star.destroy_all
 User.destroy_all
 puts "Clean OK"
