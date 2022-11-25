@@ -32,13 +32,21 @@
 
 .card_star {
   font-family: 'Roboto Condensed';
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
-  padding: 8px;
-  background-color: rgba(149, 143, 149, 0.153);
+  padding: 16px;
+  background-color:rgba(215, 184, 176, 0.221);
   display: flex;
   align-items: center;
   border: none;
   box-shadow: 1px 2px 2px rgb(215, 215, 215);
   border-radius: 4px;
+  text-align: justify;
+}
+
+.card_star img {
+  border-radius: 4px 4px;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
 }
