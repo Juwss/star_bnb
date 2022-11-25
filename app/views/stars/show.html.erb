@@ -11,6 +11,9 @@
     </div>
     <div class="card_star">
       <%= @star.description %>
+      <br>
+      <br>
+      <%= @star.price %>€
     </div>
     <div>
       <%= link_to "Réserver ici", new_star_reservation_path(@star), class: "btn btn-gradient" %>
