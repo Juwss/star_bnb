@@ -1,0 +1,44 @@
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.card {
+  background-color:rgba(215, 184, 176, 0.221);
+  align-items: center;
+  padding: 14px;
+  box-shadow: 1px 2px 2px rgb(215, 215, 215);
+  border: none;
+  border-radius: 4px;
+}
+
+.card img {
+  border-radius: 4px 4px 0px 0px;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.cards_star {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 18px;
+  margin: 10px auto;
+  margin-bottom: 60px;
+  width: 80%;
+}
+
+.card_star {
+  font-family: 'Roboto Condensed';
+  font-size: 24px;
+  font-weight: 500;
+  padding: 8px;
+  background-color: rgba(149, 143, 149, 0.153);
+  display: flex;
+  align-items: center;
+  border: none;
+  box-shadow: 1px 2px 2px rgb(215, 215, 215);
+  border-radius: 4px;
+}

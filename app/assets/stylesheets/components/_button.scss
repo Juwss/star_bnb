@@ -1,13 +1,38 @@
 .btn
 {
-  background-color: rgba(67, 48, 75, 0.84);
+  background-color: rgb(129, 60, 118);
   color: white;
 }
 
 .btn:hover{
-  background: rgba(67, 48, 75, 0.64);
+  background: rgb(253, 255, 207);
   color: white;
 }
+
+.btn-gradient:hover {
+  background: rgb(253, 255, 207);
+  color: rgb(65, 30, 59);
+}
+
+
+.btn-gradient {
+  text-decoration: none;
+  letter-spacing: 0vmin;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  background: rgb(129, 60, 118);
+  transition: background 0.3s ease;
+}
+
+.add-a-star {
+  position: absolute;
+  right: 10px;
+  top: 127px;
+}
+
 
 // button
 // {
