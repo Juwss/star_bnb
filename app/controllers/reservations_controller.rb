@@ -5,7 +5,12 @@ class ReservationsController < ApplicationController
 
   def show
     @reservation = Reservation.find(params[:id])
+    @price = (@reservation.date_end - @reservation.date_start).to_i * @reservation.star.price.to_i
   end
+
+    # recupérer la date_start et date_end
+    # calculer le nombre de jours correspondants
+    # faire nb de jour * price
 
   def new
     @star = Star.find(params[:star_id])
