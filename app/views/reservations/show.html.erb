@@ -2,13 +2,21 @@
 <div class="container1">
 <h1>Détails de la réservation</h1>
 
-<p>Price :
-<%= @reservation.star.price %></p>
+<%
+start_string = @reservation.date_start.to_s
+end_string = @reservation.date_end.to_s
+
+date1 = Date.strptime(start_string, '%Y-%m-%d')
+date2 = Date.strptime(end_string, '%Y-%m-%d')
+%>
+
+<p>Dates :
+Du <%= date1.strftime('%d/%m/%Y')%> au <%= date2.strftime('%d/%m/%Y') %>
+</p>
 
 
-<p>Date :
-du <%= @reservation.date_start %>
-au <%= @reservation.date_end %></p>
+Price :
+<%= @price %>€</p>
 
   <%# <div> %>
     <%# <%= link_to "Retour à la liste", stars_path %>
