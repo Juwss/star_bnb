@@ -15,12 +15,3 @@
   </div>
 <% end %>
 <%= render "devise/shared/links" %>
-
-<h3>Se déconnecter</h3>
-<%= form_for(current_user,
-    url: destroy_user_session_path, html: { method: :delete }) do |f| %>
-    <%= f.submit "Log out" %>
-<% end %>
-<div class="form-actions">
-  <%= f.button :submit, "Log out" %>
-</div>

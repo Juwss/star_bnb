@@ -1,7 +1,6 @@
 <div class="container1">
   <h1>Ajouter une star</h1>
 
-<<<<<<< HEAD
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name),
   data: {turbo: false}) do |f| %>
 
@@ -18,12 +17,8 @@
   <div class="actions">
     <%= f.submit "Log in" %>
   </div>
-
-   <div class="actions">
-    <%= f.submit "Log out" %>
-  </div>
 <% end %>
-=======
+
   <%= simple_form_for ([@star]) do |f| %>
     <%= f.input :first_name %>
     <%= f.input :last_name %>
@@ -37,4 +32,3 @@
   <br>
   <div><%= link_to "Retour à la liste", stars_path, class: "btn btn-gradient" %></div>
 </div>
->>>>>>> master
