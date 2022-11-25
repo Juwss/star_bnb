@@ -1,48 +1,8 @@
-@import "home";
-
 .container {
   margin: auto;
-}
-
-.cards_star {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 18px;
-  margin: 10px auto;
-  margin-bottom: 60px;
-  width: 80%;
-}
-
-.card_star {
-  font-family: 'Bitter', serif;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 8px;
-  background-color: rgba(149, 143, 149, 0.153);
-  display: flex;
-  align-items: center;
-  border: none;
-  box-shadow: 1px 2px 2px rgb(215, 215, 215);
-  border-radius: 2px;
 }
 
 #img {
   height: 100%;
   max-width: fit-content;
-}
-
-.btn-gradient {
-  color: white;
-  padding: 8px 24px;
-  border-radius: 4px;
-  font-weight: bold;
-  font-family: Helvetica, sans-serif;
-  background: linear-gradient(#5f1e45, #601542);
-  transition: background 0.3s ease;
-  border: 1px solid #601542;
-}
-
-.btn-gradient:hover {
-  background: rgb(232, 199, 159);
-  color: white;
 }

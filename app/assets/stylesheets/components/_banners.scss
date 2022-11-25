@@ -1,0 +1,44 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1vmin;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 56px;
+  font-weight: bold;
+  font-family:'Bebas Neue', cursive;
+  letter-spacing: 2vmin;
+}
+
+.banner p {
+  font-size: 24px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-family:'Bebas Neue', cursive;
+  letter-spacing: 1vmin;
+}
+
+.banner-secondary {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: Bebas neue;
+  font-size: 56px;
+  letter-spacing: 2vmin;
+  font-weight: 800;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
